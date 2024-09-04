@@ -1,11 +1,11 @@
 const lElementosBotoesFiltrar = document.querySelectorAll(".btn");
-lElementosBotoesFiltrar.forEach(lElementoBotalFiltrar => {
-    if (lElementoBotalFiltrar.value){
-        lElementoBotalFiltrar.addEventListener("click", function(){
-            FiltrarLivrosPorCategoria(lElementoBotalFiltrar.value);   
+lElementosBotoesFiltrar.forEach(lElementoBotaoFiltrar => {
+    if (lElementoBotaoFiltrar.value){
+        lElementoBotaoFiltrar.addEventListener("click", function(){
+            FiltrarLivrosPorCategoria(lElementoBotaoFiltrar.value);   
         });
-    } else if (lElementoBotalFiltrar.classList.contains("btn-disponiveis")){
-        lElementoBotalFiltrar.addEventListener("click", function(){
+    } else if (lElementoBotaoFiltrar.classList.contains("btn-disponiveis")){
+        lElementoBotaoFiltrar.addEventListener("click", function(){
             FiltrarLivrosDisponiveis();   
         });
     }

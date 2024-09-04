@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta metacharset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,11 +10,11 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css" />
 </head>
-<header class="header">
-  <h1><img src="imagens/Logo-1.png" /></h1>
-</header>
-
 <body>
+  <header class="header">
+    <h1><img src="imagens/Logo-1.png"/></h1>
+  </header>
+  
   <section class="banner"></section>
   <nav class="wrap">
     <ul class="nav">
@@ -26,9 +25,9 @@
       <li><button class="btn btn-ordenacao" href="#" id="btnOrdenarPorPreco">ORDENAR POR PREÇO</button></li>
     </ul>
   </nav>
-  <section class="livros wrap" id="livros">
-
-  </section>
+  
+  <section class="livros wrap" id="livros"></section>
+  
   <section id="valor_total_livros_disponiveis">
     <div class="livros__disponiveis">
       <p>Todos os livros disponíveis por R$ <span id="valor">299,00</span></p>
@@ -40,6 +39,7 @@
     <p>Alura - Mergulhe em tecnologia</p>
   </footer>
 
+  <script src="app/metodoSort.js"></script>
   <script src="app/metodoFilter.js"></script>
   <script src="app/metodoMap.js"></script>
   <script src="app/metodoForEach.js"></script>
