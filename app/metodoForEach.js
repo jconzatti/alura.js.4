@@ -2,6 +2,7 @@ function CarregarLivrosNaSecao(pLivros){
     const lElementoSecaoDeLivros = document.getElementById("livros");
     lElementoSecaoDeLivros.innerHTML = '';
     pLivros.forEach(lLivro => {lElementoSecaoDeLivros.appendChild(CriarElementoConteinerDeLivro(lLivro))});
+    CalcularValorTotalDosLivroDisponiveis(pLivros);
 }
 
 function CriarElementoConteinerDeLivro(pLivro){
